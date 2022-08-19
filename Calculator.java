@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Calculator {
+
 	
 	private int X,Y,R;
 	
@@ -26,9 +27,9 @@ public class Calculator {
 			--Y;
 		}
 	}
-	public void mod()
+	public void sub()
 	{
-		R = X % Y;
+		R = X - Y;
 	}
 	
 	public void display()
@@ -47,7 +48,7 @@ public class Calculator {
 		int y = 4;
 		m1.init(x, y);
 		//do{
-			//System.out.println("Enter Your Choice\n1.Addition 2.Multiplication 3.Power 0.Exit");
+			//System.out.println("Enter Your Choice\n1.Addition 2.Multiplication 3.Power 4.sub 0.Exit");
 			//n = s.nextInt();
 			//switch(n)
 			//{
@@ -66,6 +67,11 @@ public class Calculator {
 				m1.power();
 				m1.display();
 			//	break;
+                          //case 4:
+				m1.sub();
+				m1.display();
+			//	break;
+
 				
 			//default:
 			//	System.out.println("Invalid Input");
